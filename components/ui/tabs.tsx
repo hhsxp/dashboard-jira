@@ -1,8 +1,8 @@
 
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 
-export function Tabs({ children, defaultValue }: { children: ReactNode, defaultValue: string }) {
-  return <div>{children}</div>;
+export function Tabs({ children, defaultValue, className }: { children: ReactNode, defaultValue: string, className?: string }) {
+  return <div className={className}>{children}</div>;
 }
 
 export function TabsList({ children, className }: { children: ReactNode, className?: string }) {
